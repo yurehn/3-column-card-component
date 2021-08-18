@@ -24,7 +24,6 @@
  background-color: var(--Bright-orange);
 }
 .Bright-orange-button{
-  border: none;
   color: var(--Bright-orange);;
   cursor: pointer
 }
@@ -33,7 +32,6 @@
   background-color: var(--Dark-cyan);
 }
 .Dark-cyan-button{
-  border: none;
   color: var(--Dark-cyan);
   cursor: pointer
 }
@@ -42,7 +40,6 @@
   background-color: var(--Very-dark-cyan);
 }
 .Very-dark-cyan-button{
-  border: none;
   color: var(--Very-dark-cyan);
   cursor: pointer
 }
@@ -59,42 +56,41 @@ body{
 
 }
 
-
-
-
 .container{
   border-radius: 10px;
   overflow: hidden;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .card{
   width: 290px;
   height: 450px;
-  /* overflow: hidden; */
 }
 
 .card-content{
   padding: 0px 40px;
 }
 .card-content_logo{
-  padding-top: 45px;
+  margin-top: 45px;
+  width: 64px;
+  height: 40px;
 }
 
 .card-content_title{
   font-family: var(--Family-Big-Shoulders-Display);
   font-weight: var(--Weight-2);
-  color: var(--Very-light-gray);
-  text-transform: uppercase;
   font-size: 30px;
+  text-transform: uppercase;
+  color: var(--Very-light-gray);
+  margin: 30px 0px;
 }
 .card-content_info{
   font-weight: var(--Weight-1);
   color: var(--Transparent-white);
-  margin-top: 30px;
+  margin: 0px;
 }
 
 .card-content_button:hover{
@@ -104,8 +100,22 @@ body{
   transition: 0.3s;
 }
 .card-content_button{
+  border: none;
   padding: 12px 25px;
   border-radius: 20px;
-  margin-top: 75px;
+  margin-top: 30%;
+
 }
+
+@media screen and (max-width: 375px){
+  body{
+    height: auto;
+  }
+
+  .container{
+    flex-direction: column;
+    margin: 80px 0;
+  }
+}
+
 
